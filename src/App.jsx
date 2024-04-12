@@ -2,17 +2,19 @@
 // import Search from "./components/Search";
 import Meals from "./components/Meals";
 // import Modal from "./components/Modal";
-
+import { AppProvider } from "./context/context";
 import "./App.css";
 
 function App() {
   return (
-    <main>
-      {/* <Search /> */}
-      {/* <Favourites /> */}
-      <Meals />
-      {/* <Modal /> */}
-    </main>
+    <AppProvider>
+      <main>
+        {/* <Search /> */}
+        {/* <Favourites /> */}
+        <Meals />
+        {/* <Modal /> */}
+      </main>
+    </AppProvider>
   );
 }
 

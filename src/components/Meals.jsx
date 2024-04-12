@@ -1,5 +1,10 @@
+import { useGlobalContext } from "../context/context";
+
 const Meals = () => {
-  return <h1>Hello Meals</h1>;
+  const context = useGlobalContext();
+  console.log(context);
+
+  return <h1>Hello {context.name}</h1>;
 };
 
 export default Meals;
