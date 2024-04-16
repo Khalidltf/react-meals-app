@@ -1,12 +1,20 @@
 /* Search */
 /* Favorites */
 /* Meals */
+.section,
 .section-center {
   margin: 0 auto;
-  outline: 1px solid red;
   padding: 3rem 0;
   width: var(--view-width);
   max-width: var(--max-width);
+}
+
+.section h2 {
+  text-transform: lowercase;
+}
+
+.section-center {
+  outline: 1px solid red;
   display: grid;
   gap: 2rem;
 }
@@ -43,6 +51,8 @@
 }
 
 .single-meal h5 {
+  outline: 1px solid salmon;
+  font-size: 1.4em;
   padding: 0;
   margin: 0;
 }
@@ -53,6 +63,20 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.like-btn {
+  outline: 1px solid salmon;
+  background: transparent;
+  border: transparent;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.like-btn:hover {
+  color: var(--red-dark);
+  transform: translateY(-2px);
 }
 
 /* Modal */
