@@ -1,5 +1,5 @@
 // import Favourites from "./components/Favourites";
-// import Search from "./components/Search";
+import Search from "./components/Search";
 import Meals from "./components/Meals";
 // import Modal from "./components/Modal";
 import { AppProvider } from "./context/context";
@@ -9,7 +9,7 @@ function App() {
   return (
     <AppProvider>
       <main>
-        {/* <Search /> */}
+        <Search />
         {/* <Favourites /> */}
         <Meals />
         {/* <Modal /> */}
