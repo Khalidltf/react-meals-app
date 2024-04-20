@@ -1,8 +1,10 @@
 import { useGlobalContext } from "../context/context";
-import { LuThumbsUp } from "react-icons/lu";
+import { FaRegHeart } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
 
 const Meals = () => {
-  const { meals, loading, selectMeal } = useGlobalContext();
+  const { meals, loading, selectMeal, theLikeButtonMeal, favouritesMeals } =
+    useGlobalContext();
 
   if (loading)
     return (
@@ -24,11 +26,22 @@ const Meals = () => {
         const { idMeal, strMeal: title, strMealThumb: image } = meal;
         return (
           <article key={idMeal} className="single-meal">
-            <img src={image} className="img" onClick={()=>selectMeal(idMeal)} />
+            <img
+              src={image}
+              className="img"
+              onClick={() => selectMeal(idMeal)}
+            />
             <footer>
               <h5>{title}</h5>
-              <button className="like-btn">
-                <LuThumbsUp />
+              <button
+                className="like-btn"
+                onClick={() => theLikeButtonMeal(idMeal)}
+              >
+                {favouritesMeals.some((meal) => meal.idMeal === idMeal) ? (
+                  <FaHeart />
+                ) : (
+                  <FaRegHeart />
+                )}
               </button>
             </footer>
           </article>
