@@ -43,9 +43,8 @@
 /* Favorites */
 
 .favorites {
-  background: var(--black);
   color: var(--white);
-  padding: 1rem 0;
+  padding: 1rem 0 0 0;
 }
 
 .favorites-content {
@@ -58,6 +57,11 @@
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
+}
+
+.favorites-container h5 {
+  transform: rotateZ(-90deg);
+  font-size: 1.1em;
 }
 
 .favorite-meal {
@@ -170,7 +174,7 @@
 
 .paginate {
   position: absolute;
-  left: 64%;
+  left: 40%;
   color: white;
   bottom: 0px;
 }

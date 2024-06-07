@@ -6,7 +6,6 @@ const Favourites = () => {
   return (
     <section className="favorites">
       <div className="favorites-content">
-        <h5>Favorites</h5>
         <div className="favorites-container">
           {favouritesMeals.map((favoriteMeal) => {
             const {
