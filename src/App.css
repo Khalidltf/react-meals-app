@@ -1,11 +1,9 @@
 /* Search */
 .search-container {
-  /* height: 5rem; */
   padding-block: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--white);
 }
 
 .search-container form {
@@ -22,7 +20,11 @@
   padding: 0.75rem 0.75rem;
   border: 1px solid var(--grey-200);
   border-radius: var(--borderRadius);
-  background: var(--backgroundColor);
+  background: rgb(235, 235, 235);
+}
+
+.search-container .form-input:focus {
+  outline: 2px solid #ebebeb;
 }
 
 ::placeholder {
