@@ -2,7 +2,7 @@ import { useGlobalContext } from "./context/context";
 
 import Search from "./components/Search";
 import Favourites from "./components/Favourites";
-// import Meals from "./components/Meals";
+import Meals from "./components/Meals";
 import Modal from "./components/Modal";
 import "./App.css";
 
@@ -13,7 +13,7 @@ function App() {
     <main className="overlay">
       <Search />
       {favouritesMeals.length > 0 && <Favourites />}
-      {/* <Meals /> */}
+      <Meals />
       {showModal && <Modal />}
     </main>
   );
