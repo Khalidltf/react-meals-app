@@ -246,3 +246,9 @@
   color: var(--white);
   background: var(--red-dark);
 }
+
+@media (max-width: 1000px) {
+  .paginate {
+    display: none;
+  }
+}
